@@ -28,13 +28,14 @@ android {
         }
     }
 
+    flavorDimensions += "environment"
+
     productFlavors {
         create("staging") {
             applicationIdSuffix = ".staging"
             dimension = "environment"
         }
     }
-
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
