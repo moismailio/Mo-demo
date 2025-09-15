@@ -28,6 +28,8 @@ android {
         }
     }
 
+    flavorDimensions += "environment"
+
     productFlavors {
         create("staging") {
             applicationIdSuffix = ".staging"
